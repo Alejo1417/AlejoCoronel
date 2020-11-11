@@ -1,0 +1,23 @@
+//Colors
+$black: black;
+$blueBar: rgb(37, 93, 214);
+$blueCol: rgba(2, 117, 216, 1);
+$bluePrimary: #0275d8;
+$fondoNG: rgba(28, 26, 26, 0.636), rgba(150, 150, 147, 0.575);
+$shadowGrey: rgba(150, 150, 147, 0.575);
+
+//---
+$fontPrimary: 'Kelly Slab', cursive;
+
+//--
+$txtShadow: 0px 1px 3px;
+
+//--
+$margin-elements: 70px;
+
+.shadow {
+    fill: $bluePrimary;
+    opacity: .5;
+    filter: drop-shadow(1px 1px 20px blue);
+    transition: 500ms ease-in-out;
+}

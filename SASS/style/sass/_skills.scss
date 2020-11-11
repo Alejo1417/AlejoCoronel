@@ -1,0 +1,42 @@
+@import '_variables';
+
+#skills{
+    margin-top: 50px;
+    height: 100vh;
+
+    h2{
+        margin-top: 15%;
+        margin-bottom: 50px;
+    }
+
+    #divBar > div.row {
+        .col {
+        color: $blueCol;
+        font-size: larger;
+        font-weight: 900;
+        font-family: $fontPrimary
+        }
+    }
+
+    .bar {
+        background-color: gray;
+        border-radius: 20px;
+        width: 100%;
+
+        .loadbar {
+            width: 0%;
+            height: 20px;
+            background-color: $blueBar;
+            border-radius: 20px;
+            transition: 1s linear;
+
+            &:before{
+            content: attr(per);
+            position: absolute;
+            left: -30px;
+            font-family: $fontPrimary;
+            color: $blueCol;
+            }
+        }
+    }
+}

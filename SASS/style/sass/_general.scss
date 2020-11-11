@@ -1,0 +1,55 @@
+@import '_variables';
+
+* {
+    text-decoration: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    
+}
+
+html {
+    // visibility: hidden;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-size: larger;
+}
+
+body{
+    background-image: linear-gradient(to top, $fondoNG);
+} 
+
+h1, h2 {
+    display: inline-block;
+    font-family: $fontPrimary;
+    font-weight: 500;
+}
+//------Scroll-Bar
+::-webkit-scrollbar{
+    width: 1em;
+}
+::-webkit-scrollbar-thumb{
+    visibility: visible;
+    background: #666c7a;
+}
+::-webkit-scrollbar-track{
+    background: $shadowGrey;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #4a4f59;
+}
+//-----ScrollTop
+.scrollTop  {
+    display: none;
+    position: fixed;
+    left: 77em;
+    top: 37em;
+    width: 40px;
+    height: 40px;
+    color: black;
+    opacity: 0.5;
+}
