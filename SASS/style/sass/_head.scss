@@ -2,4 +2,24 @@
 
 #head {
     margin-top: 100px;
+    div.row{
+        width: 100%;
+
+        p.text-left {
+            font-family:'Texturina', serif;
+            margin-left: 8%;
+            font-weight: 700;
+            span#txt {
+                margin-left: 25vw;
+                padding-top: 50%;
+            }
+        }
+    }
+    img#caraVector {
+        width: 50%;
+        height: 50%;
+        opacity: 0.5;
+        margin-left: 26%;
+        margin-top: 30px;
+    }
 }
