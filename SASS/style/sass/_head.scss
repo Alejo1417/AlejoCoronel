@@ -5,14 +5,12 @@
     div.row{
         width: 100%;
 
-        p.text-left {
+        p.sp {
             font-family:'Texturina', serif;
+            text-align: center;
             margin-left: 8%;
             font-weight: 700;
-            span#txt {
-                margin-left: 25vw;
-                padding-top: 50%;
-            }
+            line-height: 2.5;
         }
     }
     img#caraVector {
