@@ -1,42 +1,59 @@
 @import '_variables';
 
-#skills{
-    margin-top: 50px;
-    height: 100vh;
 
-    h2{
-        margin-top: 15%;
-        margin-bottom: 50px;
+#skills {
+
+    #progressBox {
+        display: flex;
+        flex-flow: row ;
+        justify-content: space-evenly;
+        align-items: center;
+        min-height: fit-content;
+        padding-top: 70px;
+        
+        // background-color: black;
+        // opacity: 0.210;
+        
+    }
+    h3.text {
+        position: relative;
+        top: -20px;
+        left: 19px;
+        color: $bluePrimary;
+        text-shadow: 1px 0.5px 0.5px black;
+    }
+    h3.adjust {
+        left: 1.3em;
+    }
+    h3.adjust1 {
+        left: 1.9em;
+    }
+    #box2 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .number {
+        position: relative;
+        top: -109px;
+        left: 63px;
+        color: white;
+        text-shadow: 1px 1px 1px white, 1px 1px 1px silver;
     }
 
-    #divBar > div.row {
-        .col {
-        color: $blueCol;
-        font-size: larger;
-        font-weight: 900;
-        font-family: $fontPrimary
-        }
+}
+.canvasSVG {
+    .rect1 {
+        width: 360px;
+        height:360px;
+        fill: url(#blueGradient);
     }
-
-    .bar {
-        background-color: gray;
-        border-radius: 20px;
-        width: 100%;
-
-        .loadbar {
-            width: 0%;
-            height: 20px;
-            background-color: $blueBar;
-            border-radius: 20px;
-            transition: 1s linear;
-
-            &:before{
-            content: attr(per);
-            position: absolute;
-            left: -30px;
-            font-family: $fontPrimary;
-            color: $blueCol;
-            }
-        }
+    .rect2 {
+        width: 230px;
+        height: 230px;
+        fill: black;
+        opacity: 0.7;
+        transform: rotate(45deg);
     }
 }

@@ -28,6 +28,11 @@ h1, h2 {
     font-family: $fontPrimary;
     font-weight: 500;
 }
+h3 {
+    font-family: $fontPrimary;
+    display: inline;
+
+}
 //------Scroll-Bar
 ::-webkit-scrollbar{
     width: 1em;
