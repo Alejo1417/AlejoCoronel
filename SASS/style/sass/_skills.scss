@@ -1,8 +1,11 @@
 @import '_variables';
 
-
 #skills {
-
+    
+    .square {
+        border-radius: 20px;
+    }
+    
     #progressBox {
         display: flex;
         flex-flow: row ;
@@ -36,17 +39,17 @@
     }
     .number {
         position: relative;
-        top: -109px;
-        left: 63px;
+        top: -97px;
+        left: 60px;
         color: white;
         text-shadow: 1px 1px 1px white, 1px 1px 1px silver;
     }
 
 }
 .canvasSVG {
+    transform: rotate(180deg);
     .rect1 {
         width: 360px;
-        height:360px;
         fill: url(#blueGradient);
     }
     .rect2 {
