@@ -18,6 +18,13 @@ html {
 p {
     font-size: larger;
 }
+p.sp {
+    font-family:'Texturina', serif;
+    text-align: center;
+    margin-left: 8%;
+    font-weight: 700;
+    line-height: 2.5;
+}
 
 body{
     background-image: linear-gradient(to top, $fondoNG);

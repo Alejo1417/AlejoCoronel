@@ -1,11 +1,3 @@
-//-------Footer--------
-function btnContact(){
-    $(".contact").hover(function(){
-        $(this).addClass('shadow');
-    }, function(){
-        $(this).removeClass('shadow')
-    });
-};
 //----Scroll Button
 function btnScroll(){
    $(window).scroll(function(){
@@ -22,4 +14,3 @@ function btnScroll(){
    });
 }
 btnScroll();
-btnContact();
