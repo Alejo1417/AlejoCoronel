@@ -14,3 +14,11 @@ function btnScroll(){
    });
 }
 btnScroll();
+
+
+var x = 0;
+$(document).ready(function(){
+  $("window").scroll(function(){
+    console.log(x+=1);
+  });
+});
