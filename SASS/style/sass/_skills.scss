@@ -1,9 +1,11 @@
 @import '_variables';
 
 #skills {
+    margin-top: 150px;
     
     .square {
         border-radius: 20px;
+
     }
     
     #progressBox {
@@ -13,10 +15,6 @@
         align-items: center;
         min-height: fit-content;
         padding-top: 70px;
-        
-        // background-color: black;
-        // opacity: 0.210;
-        
     }
     h3.text {
         position: relative;
@@ -47,6 +45,7 @@
 
 }
 .canvasSVG {
+
     transform: rotate(180deg);
     .rect1 {
         width: 360px;

@@ -9,9 +9,13 @@
     list-style: none;
     
 }
-
+.sr{
+    visibility: hidden;
+}
+.visible {
+    visibility: visible;
+}
 html {
-    // visibility: hidden;
     scroll-behavior: smooth;
 }
 
@@ -21,7 +25,6 @@ p {
 p.sp {
     font-family:'Texturina', serif;
     text-align: center;
-    margin-left: 8%;
     font-weight: 700;
     line-height: 2.5;
 }
@@ -30,7 +33,15 @@ body{
     background-image: linear-gradient(to top, $fondoNG);
 } 
 
-h1, h2 {
+h1 {
+    position: absolute;
+    left: 25%;
+    top: -100%;
+    display: inline-block;
+    font-weight: 900;
+    text-shadow: 1px 1px 3px black, 2px 2px 5px $bluePrimary;
+}
+h2 {
     display: inline-block;
     font-family: $fontPrimary;
     font-weight: 500;
@@ -57,11 +68,13 @@ h3 {
 //-----ScrollTop
 .scrollTop  {
     display: none;
+    border-radius: 10px;
     position: fixed;
-    left: 77em;
-    top: 37em;
-    width: 40px;
-    height: 40px;
+    left: 82%;
+    top: 80%;
+    width: 45px;
+    height: 45px;
     color: black;
-    opacity: 0.5;
+    opacity: 0.4;
+    visibility: visible;
 }

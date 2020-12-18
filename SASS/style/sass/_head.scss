@@ -2,14 +2,21 @@
 
 #head {
     margin-top: 100px;
-    div.row{
-        width: 100%;
-    }
-    img#caraVector {
-        width: 50%;
-        height: 50%;
-        opacity: 0.5;
-        margin-left: 26%;
-        margin-top: 30px;
+    div.intro {
+        
+        #prueba {
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-evenly;
+        
+            img#caraVector {
+                position: relative;
+                left: 36%;
+                width: 30%;
+                height: 30%;
+                opacity: 0.5;
+                margin-top: 30px;
+            }
+        }
     }
 }

@@ -1,7 +1,7 @@
 @import '_variables';
 
 footer {
-    margin-top: 200px;
+    margin-top: 250px;
     position: relative;
     top: -15em;
     
@@ -15,6 +15,11 @@ footer {
         .simbol {
             width: 50px;
             height: 50px;
+            transition: fill, transform .5s;
+            &:hover {
+                fill: $bluePrimary;
+                transform: scale(1.2);                
+            }
         }
     }
 }
