@@ -4,7 +4,11 @@
     margin-top: 150px;
     
     .square {
-        border-radius: 20px;
+        position: relative;
+        // border: inset 0.5px;
+        border-top-left-radius: 10%;
+        border-bottom-left-radius: 10%;
+
 
     }
     

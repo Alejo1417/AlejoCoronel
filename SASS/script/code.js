@@ -16,7 +16,7 @@ function btnScroll(){
 btnScroll();
 
 //Scroll things...............
-// window.sr = new ScrollReveal();
+window.sr = new ScrollReveal();
 loadh2 = {
     duration: 1000, 
     distance: '250px',
@@ -26,12 +26,12 @@ loadh2 = {
 
 //Canvas Load
 function callBack() { 
-    ScrollReveal().reveal('#canvas', {
+    sr.reveal('#canvas', {
         duration: 600
     })
 }
 function showCanvas(){
-    ScrollReveal().reveal('#span', {
+    sr.reveal('#span', {
         delay: 900,
         duration: 800,
         origin: 'top',
@@ -41,7 +41,7 @@ function showCanvas(){
     
 }
 function canvasLoad(){
-    ScrollReveal().reveal('h1', {
+    sr.reveal('h1', {
         origin: 'top',
         distance: '70px',
         interval: 5000,
@@ -50,7 +50,7 @@ function canvasLoad(){
     })
 };
 // Nav Load--
-ScrollReveal().reveal('#sectionNav', {
+sr.reveal('#sectionNav', {
     reset: true,
     origin: 'top',
     distance: '80px',
@@ -60,7 +60,7 @@ ScrollReveal().reveal('#sectionNav', {
     easing: 'cubic-bezier(.24,-0.33,.27,.95)'
 });
 //Head Load
-ScrollReveal().reveal('.interval', {
+sr.reveal('.interval', {
     interval: 600,
     distance: '250px',
     origin: 'left',
@@ -69,7 +69,7 @@ ScrollReveal().reveal('.interval', {
 
 //Skills Load--
 function svgSkill() {
-    ScrollReveal().reveal('.square', {
+    sr.reveal('.square', {
         interval: 100,
         delay: 500,
         duration: 2000,
@@ -80,11 +80,11 @@ function svgSkill() {
 };
 //Aptitute Load
 function aptLoad() {
-    ScrollReveal().reveal('.txtPoint', {interval: 700})
+    sr.reveal('.txtPoint', {interval: 700})
 }
 //Contact Load
 function simbolLoad() {
-    ScrollReveal().reveal('.load', {
+    sr.reveal('.load', {
         interval: 500,
         origin: 'bottom',
         distance: '70px',
@@ -97,3 +97,19 @@ svgSkill();
 canvasLoad();
 simbolLoad();
 ScrollReveal().reveal('h2', loadh2);
+
+//Skill animation
+function skillSVG(){
+    $('.square').hover(function(){
+        $(this).animate({
+            boxShadow: '1px 2px 4px black',
+            backgroundColor: '#9b9fa178'
+        })
+    }, function(){
+        $(this).animate({
+            boxShadow: 'null',
+            backgroundColor: 'transparent'
+        })
+    })
+};
+skillSVG();
