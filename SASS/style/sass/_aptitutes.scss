@@ -1,9 +1,8 @@
 @import '_variables';
 
-#aptitutes {
+#aptitudes {
     padding-top: 5%;
-    height: 100vh;
-    margin-top: 9em;
+    height: 100%;
     p.txtPoint{
         &:before {
         content: '\2724';
@@ -13,6 +12,24 @@
         width: 50px;
         height: 50px;
         color: black;
+        }
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 425px) {
+    #aptitudes {
+        margin-top: 1em;
+        p.txtPoint {
+            margin: 40px auto;
+            line-height: 25px;
+            &:before{
+                display:none;
+            }
+        }
+        h2#hola {
+            font-size: 70px;
+            margin-left: auto;
+            margin-top: 2em;
         }
     }
 }

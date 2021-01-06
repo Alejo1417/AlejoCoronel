@@ -2,8 +2,7 @@
 <html class="sr" lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">    <link rel="stylesheet" href="style/main.css">
     <!-- Bootstrap / jQuery / ScrollReveal -->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="script/jqueryColor.js" crossorigin="anonymous"></script>
@@ -21,42 +20,59 @@
       <canvas  id="lienzo"></canvas>
     </header>
     <div id="intro">
-      <h1 class="sideL  text-primary"> ALejo Coronel</h1>
-      <span id="span">Hi, I'm a beginner front-end developer...</span>
+      <div class="boxName">
+        <div class="allName" id="name">
+          <span>A</span>
+          <span>L</span>
+          <span>E</span>
+          <span>J</span>
+          <span>O</span>
+        </div>
+        <div class="allName" id="surname">
+          <span>C</span>
+          <span>O</span>
+          <span>R</span>
+          <span>O</span>
+          <span>N</span>
+          <span>E</span>
+          <span>L</span>
+        </div>
+        <span id="span">The future of Design & Creativity</span>
+      </div>  
     </div>    
 <!--Nav-->
     <section class="container-fluid" id="sectionNav">
         <nav class="navbar navbar-expand-md bg-grey">
             <span></span>
-            <button class="navbar-toggler" type="button" data-toggle="dropdown" id="drop">
-              <svg viewBox="0 0 16 16" class="bi bi-list-nested" fill="blue" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z"></path>              </svg>
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" viewBox="0 0 16 16" style="transform: scale(2.5);">
+                <path fill-rule="evenodd" d="M4 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+              <span class="navbar-toggler-icon"></span>
             </button>
-            
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav">
                   <li class="nav-item active">
-                    <a class="nav-link" href="#">Home </a>
+                    <a class="nav-link" href="#">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#skills">Skills</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#aptitutes" >Aptitutes</a>
+                    <a class="nav-link" href="#aptitudes">Aptitudes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#contact" >Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
         </nav>
     </section>    
-<!--Head-->
+<!--Head--> 
     <section id="head" class="container"> 
         <div class="intro container">
             <h2 class="text-center display-2 mb-5">Who Am I?</h2>
-            <div id="prueba" class="d-flex pt-3">
+            <div id="imgSVGBox" class="d-flex pt-3">
                 <div>
                     <p class="sp interval">Nacido en Argentina, finales del 2019 tuve el compromiso de invertir mi tiempo por amor al arte de la <span id="txt">programación y creatividad.</span></p>
                 </div>
@@ -70,14 +86,14 @@
     <section id="skills" class="container">
       <div id="progressBox">
         <div class="square"> <!--Javascript-->
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="canvasSVG" width="160" height="174" viewBox="0 0 360 374"  preserveAspectRatio="xMinYMin meet">
+          <svg class="canvasSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="174" viewBox="0 0 360 374"  preserveAspectRatio="xMinYMin meet">
             <defs>
               <filter id="shadow">
                 <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
                 <feOffset dx="2" dy="4" />
                 <feMerge>
                 <feMergeNode />
-                <feMergeNode in="SourceGraphic" />
+                <feMergeNode in="SourceGraphic"/>
                 </feMerge>
               </filter>
               <linearGradient id="blueGradient" gradientTransform="rotate(45)" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -167,24 +183,21 @@
       </div>  
     </section>
 <!--Aptitutes-->
-    <section id="aptitutes" class="container"> 
-        <h2 class="text-center display-2 mb-5">Aptitutes</h2>
+    <section id="aptitudes" class="container"> 
+        <h2 id="hola" class="text-center display-2 mb-5">Aptitudes</h2>
         <div id="aptLoad" class="container pt-3">
-          <p class="txtPoint">Por decisión propia, día a día busco la motivación para mejorar y aprender todo lo que abarca al Diseño Web y lo que respecta a la programación. Asumiendo un autocompromiso y progresando en mi disciplina.</p>
-          <p class="txtPoint">¿Necesita alguien para realizar diferentes tareas? La flexibilidad es algo que forma parte de mi, tengo experiencia en diversos rubros que tengo la capacidad de adapatarme a mi rubro y el saber que haré cosas nuevas es una gran motivación.</p>
-          <p class="txtPoint">Soy partidario del trabajo en equipo, sobre todo en este rubro ya que busco aprender tanto de mis compañeros como de otros miembros que tienen maás experiencia que yo y lograr la eficencia en la que se encuentre dicho equipo.</p>
-          <p class="txtPoint">¿Qué ocurre si me encuentro con algún problema? Simple, buscar más de una solución y elegir la más eficaz, siempre la hay.</p>
+          <p class="txtPoint sp">Everyday I am looking my own motivation to improve my devs sklls and compromise oneself.</p>
+          <p class="txtPoint sp">I am open to receive changes / challengers.</p>
+          <p class="txtPoint sp">Team worker, especially in this area, where I want learn from another professional devs.</p>
+          <p class="txtPoint sp">Introspective and risk taker.</p>
         </div>  
     </section>
 <!--Footer-->    
-    <footer id="contact" class="container-fluid">
-      <div class="container">
-        <h2 class="text-center display-2 mb-5">Let's talk</h2>
-      </div>
-      <p class="sp txtPoint">Me encuentro dispuesto a trabajar en equipo, aportar ideas y mejorar mis habiliadades como desarrollador para crear nuevos proyectos.</p>
-
-      <div id="simbolBox" class="container d-flex">
+    <footer id="contact" class="container">
+      <h2 class="text-center display-2 mb-5">Let's talk</h2>
+      <p class="sp txtPoint">I am available for work as a team, bring ideas and improve my skills as Web developer. Any question or sugestion contact to me or check my CV.</p>
          <!--GitHub -->
+      <div id="simbolBox">   
         <div id="git" class="load">
           <a href="https://github.com/Alejo1417">
             <svg class="simbol" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 438.549 438.549" style="enable-background:new 0 0 438.549 438.549;" xml:space="preserve"> 
@@ -214,7 +227,7 @@
         </div>
          <!--CV-->
         <div id="cv" class="load">
-          <a href="">
+          <a href="cv.pdf">
             <svg class="simbol" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 511.626 511.627" style="enable-background:new 0 0 511.626 511.627;" xml:space="preserve">
 		          <path class="set" d="M392.857,292.354h-18.274c-2.669,0-4.859,0.855-6.563,2.573c-1.718,1.708-2.573,3.897-2.573,6.563v91.361 c0,12.563-4.47,23.315-13.415,32.262c-8.945,8.945-19.701,13.414-32.264,13.414H82.224c-12.562,0-23.317-4.469-32.264-13.414 c-8.945-8.946-13.417-19.698-13.417-32.262V155.31c0-12.562,4.471-23.313,13.417-32.259c8.947-8.947,19.702-13.418,32.264-13.418 h200.994c2.669,0,4.859-0.859,6.57-2.57c1.711-1.713,2.566-3.9,2.566-6.567V82.221c0-2.662-0.855-4.853-2.566-6.563 c-1.711-1.713-3.901-2.568-6.57-2.568H82.224c-22.648,0-42.016,8.042-58.102,24.125C8.042,113.297,0,132.665,0,155.313v237.542 c0,22.647,8.042,42.018,24.123,58.095c16.086,16.084,35.454,24.13,58.102,24.13h237.543c22.647,0,42.017-8.046,58.101-24.13 c16.085-16.077,24.127-35.447,24.127-58.095v-91.358c0-2.669-0.856-4.859-2.574-6.57 C397.709,293.209,395.519,292.354,392.857,292.354z"/>
 		          <path class="set" d="M506.199,41.971c-3.617-3.617-7.905-5.424-12.85-5.424H347.171c-4.948,0-9.233,1.807-12.847,5.424 c-3.617,3.615-5.428,7.898-5.428,12.847s1.811,9.233,5.428,12.85l50.247,50.248L198.424,304.067 c-1.906,1.903-2.856,4.093-2.856,6.563c0,2.479,0.953,4.668,2.856,6.571l32.548,32.544c1.903,1.903,4.093,2.852,6.567,2.852 s4.665-0.948,6.567-2.852l186.148-186.148l50.251,50.248c3.614,3.617,7.898,5.426,12.847,5.426s9.233-1.809,12.851-5.426 c3.617-3.616,5.424-7.898,5.424-12.847V54.818C511.626,49.866,509.813,45.586,506.199,41.971z"/>
