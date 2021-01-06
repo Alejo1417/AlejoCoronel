@@ -74,8 +74,8 @@ canvasOptions = {
     duration: 1500,
     easing: 'ease-in-out'
 }
-//sr.reveal($letter, z);
-//sr.reveal($canvas, canvasOptions);
+sr.reveal($letter, z);
+sr.reveal($canvas, canvasOptions);
 
 // Nav Load--
 sr.reveal('#sectionNav', {
