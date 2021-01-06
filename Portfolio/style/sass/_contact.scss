@@ -1,0 +1,21 @@
+@import '_variables';
+
+footer {
+    margin-top: 9em;
+    
+    #simbolBox {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        margin-top: 15px;
+
+        .simbol {
+            width: 50px;
+            transition: fill, transform .5s;
+            &:hover {
+                fill: $bluePrimary;
+                transform: scale(1.2);                
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import '_variables';
+
+#sectionNav {
+    margin-top: 0;
+
+    #drop {
+        width: 70px;
+        height: 2em;
+        font-size: 40px;
+        align-content: center;
+        color: $bluePrimary;
+        margin-top: 10px;
+    }
+
+
+
+    li.nav-item {
+        padding: 0 30px;
+        a.nav-link {
+            font-family: $fontPrimary;
+            font-weight: 500;
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+}
+    
